@@ -1,0 +1,106 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Tech-Agri<span>Solutions</span></h1>
+            <p class="tagline">Empowering local farmers with smart technology</p>
+        </div>
+    </header>
+
+    <section id="define-goal" class="section">
+        <div class="container">
+            <h2>Define Your Goal</h2>
+            <p>Transforming farming practices with cutting-edge technology to achieve sustainability and efficiency.</p>
+        </div>
+    </section>
+
+    <section id="understand-audience" class="section">
+        <div class="container">
+            <h2>Understand Your Audience</h2>
+            <p>We connect deeply with local farmers to understand their unique challenges and deliver personalized, tech-driven solutions.</p>
+        </div>
+    </section>
+
+    <section id="compelling-headline" class="section">
+        <div class="container">
+            <h2>Craft a Compelling Headline</h2>
+            <p>Revolutionize Agriculture with Data-Driven Technology Solutions</p>
+        </div>
+    </section>
+
+    <section id="engaging-content" class="section">
+        <div class="container">
+            <h2>Create Engaging Content</h2>
+            <p>Experience unprecedented productivity and sustainability through innovative agricultural technologies.</p>
+        </div>
+    </section>
+
+    <section id="design-usability" class="section">
+        <div class="container">
+            <h2>Design for Usability</h2>
+            <p>Our beautifully simple interface ensures seamless navigation and a delightful user experience on any device.</p>
+        </div>
+    </section>
+
+    <section id="optimize-cta" class="section">
+        <div class="container">
+            <h2>Optimize Your Call-To-Action</h2>
+            <p>Join us in transforming farming practices. Start your journey with our smart farming solutions today!</p>
+            <button onclick="showPopup()">Get Started Now</button>
+        </div>
+    </section>
+
+    <section id="include-form" class="section">
+        <div class="container">
+            <h2>Include a Form</h2>
+            <p>Get a personalized consultation today. Sign up to learn more about our technology and its benefits for your farm.</p>
+            <form action="/submit-form" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <button type="submit">Get Consultation</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="test-iterate" class="section">
+        <div class="container">
+            <h2>Test and Iterate</h2>
+            <p>We continuously refine our solutions through innovative testing methods to ensure exceptional results for farmers.</p>
+        </div>
+    </section>
+
+    <section id="launch-promote" class="section">
+        <div class="container">
+            <h2>Launch and Promote</h2>
+            <p>Empower your farm with cutting-edge technology. Share the benefits of smart farming solutions with the world.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tech-Agri Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div class="popup-modal" id="popupModal">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3>Welcome to Tech-Agri Solutions</h3>
+            <p>Thank you for your interest! We will contact you shortly to discuss how our smart farming solutions can benefit your agricultural practices.</p>
+        </div>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
+
